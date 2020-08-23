@@ -11,8 +11,8 @@ services:
             - "COVERALLS_REPO_TOKEN=${COVERALLS_REPO_TOKEN}"
             - "DB-HOST=${DB_HOST}"
             - "DB-USER=${DB_USER}"
-            - "DB-PASSWORD=${DB_PASSWORD}"
-            - "DB-PORT=${DB_PORT}"
+            - DB-PASSWORD=password
+            - DB-PORT=3306
         volumes:
             - .:/code
         ports:
